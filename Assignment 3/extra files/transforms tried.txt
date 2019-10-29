@@ -1,0 +1,42 @@
+X_nopretrain_224_tinyCIFAR.csv
+    # train_transform = transforms.Compose([
+    #         transforms.Resize(256),
+    #         transforms.RandomCrop(224),
+    #         transforms.RandomHorizontalFlip(p=0.5),
+    #         transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=.05,hue=.05),
+    #         transforms.RandomRotation(20, resample=PIL.Image.BILINEAR),
+    #         transforms.ToTensor()
+    #     ])
+    # test_transform = transforms.Compose([transforms.Resize(224), transforms.ToTensor()])
+-----------------------------------------
+X_nopretrain_32_tinyCIFAR.csv
+    train_transform = transforms.Compose([
+            transforms.Resize(40),
+            transforms.RandomCrop(32),
+            transforms.RandomHorizontalFlip(p=0.5),
+            transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=.05,hue=.05),
+            transforms.RandomRotation(20, resample=PIL.Image.BILINEAR),
+            transforms.ToTensor()
+        ])
+    test_transform = transforms.Compose([transforms.ToTensor()])
+-----------------------------------
+X_nopretrain_32_tinyCIFAR_2.csv
+    train_transform = transforms.Compose([
+            transforms.Resize(32),
+            transforms.RandomHorizontalFlip(p=0.5),
+            transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=.05,hue=.05),
+            transforms.ToTensor()
+        ])
+    test_transform = transforms.Compose([transforms.ToTensor()])
+-----------------------------
+X_nopretrain_32_tinyCIFAR_3.csv
+    train_transform = transforms.Compose([
+            transforms.Resize(40),
+            transforms.RandomCrop(32),
+            transforms.RandomHorizontalFlip(p=0.5),
+            transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=.05,hue=.05),
+            transforms.ToTensor()
+        ])
+    test_transform = transforms.Compose([transforms.ToTensor()])
+======================
+
